@@ -1,0 +1,2 @@
+/// <reference types="vite/client" />
+export const VITE_TMDB_TOKEN = 'eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiJlZDdiZmZiNDcxZDQ5MDhhNGY3MjdjZWU3OTIzYzBiYiIsIm5iZiI6MTc5MzI5MDM3OS40NTcsInN1YiI6IjZhZTM3MDhiYWEwZjBkMGE5M2E1YzQ4NiIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.RXl2AnHnb_iczU4LJx5nALCHCVbLybEgm-ZeJMiRKXI';
