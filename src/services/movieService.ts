@@ -9,6 +9,7 @@ export const serverApi = axios.create({
 export interface GetMoviesResponse {
   page: number;
   results: Movie[];
+  total_pages: number;
 }
 
 export interface GetMoviesParams {
