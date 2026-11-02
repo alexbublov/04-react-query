@@ -8,7 +8,7 @@ import { useEffect, useState } from 'react';
 import MovieModal from '../MovieModal/MovieModal';
 import Loader from '../Loader/Loader';
 import ErrorMessage from '../ErrorMessage/ErrorMessage';
-import { useQuery } from '@tanstack/react-query';
+import { keepPreviousData, useQuery } from '@tanstack/react-query';
 import ReactPaginateModule from 'react-paginate';
 import type { ReactPaginateProps } from 'react-paginate';
 import type { ComponentType } from 'react';
@@ -29,6 +29,7 @@ const App = () => {
   const { data, isError, isLoading, isSuccess } = useQuery({
     queryKey: ['movies', searchQuery, page],
     queryFn: () => getMovies({ query: searchQuery, page }),
+    placeholderData: keepPreviousData,
     enabled: searchQuery.length > 0,
   });
 
